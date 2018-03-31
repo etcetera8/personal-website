@@ -7,9 +7,11 @@
         <article  class="project-card" :key="project.id">
           <div class="project-image" v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"></div>
           <h2 class="project-details">{{project.title}}</h2>
-          <p class="project-details">{{project.description}}</p>
-          <a class="project-details link" href=project.production>Live Page</a>
-          <a class="project-details link" href=project.github>GitHub</a>
+          <p class="project-details paragraph">{{project.description}}</p>
+          <div class="btn-wrapper">
+            <a class="project-details link" href=project.production>Live Page</a>
+            <a class="project-details link" href=project.github>GitHub</a>
+          </div>
         </article>
       </section>
     </transition-group>
@@ -163,15 +165,27 @@ export default {
   }
 
   .project-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
     border: 1px solid #FBFEF9;
-    height: 520px;
+    min-height: 520px;
     width: 50%;
     background-color:#FBFEF9;
     margin: 50px;
   }
 
+  .btn-wrapper {
+    bottom: 0;
+    margin-bottom: 25px;
+  }
+
   .project-details {
     margin: 15px 10px;
+  }
+
+  .paragraph {
+    flex-grow: 1;
   }
 
   a.project-details {
@@ -190,6 +204,7 @@ export default {
     width: 100%;
     height: 220px;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
 </style>
