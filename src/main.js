@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import App from './App'
 import Home from './components/Home/Home.vue'
 import Projects from './components/Projects/Projects.vue'
+import Resume from './components/Resume/Resume.vue'
 
 Vue.config.productionTip = false
 
@@ -12,7 +13,8 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/projects', component: Projects }
+  { path: '/projects', component: Projects },
+  { path: '/resume', component: Resume }
 ]
 
 const router = new VueRouter({
