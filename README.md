@@ -1,5 +1,6 @@
 # personal-website
 
+Building out my personal website while learning Vue!
 > A Vue.js project
 
 ## Build Setup

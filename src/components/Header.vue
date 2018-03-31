@@ -3,9 +3,9 @@
      <h1 id="name">Parker Lindley</h1>
 
     <nav>
-      <button class="ui button about">ABOUT</button>
-      <button class="ui button projects">PROJECTS</button>
-      <button class="ui button resume">RESUME</button>
+      <router-link to="/"><button class="ui button about">ABOUT</button></router-link>
+      <router-link to="/projects"><button class="ui button projects">PROJECTS</button></router-link>
+      <router-link to="/resume"><button class="ui button resume">RESUME</button></router-link>
     </nav>
 
    </header>

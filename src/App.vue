@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <router-view></router-view>
+      <router-view></router-view>
   </div>
 </template>
 
@@ -14,6 +14,8 @@ export default {
     Header
   }
 }
+
+
 </script>
 
 <style>
