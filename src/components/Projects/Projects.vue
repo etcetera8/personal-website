@@ -2,12 +2,12 @@
   <div class="projects-wrapper">
     <div class='carousel-controls'>
       <button class='carousel-controls__button' @click="previous">prev</button>
-      <button class='carousel-controls__button' @click="next">next</button>
     </div>
 
-    <transition-group class="carousel" name="slideLeft" tag="div">
-      <section class="project-display" v-for="project in projects" v-bind:key="project.id">
-        <article class="project-card" :key="project.id">
+
+    <transition-group class="carousel" name="slide" tag="div">
+      <section v-if="show" class="project-display" v-for="project in projects" v-bind:key="project.id">
+        <article  class="project-card" :key="project.id">
           <div class="project-image" v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"></div>
           <h2>{{project.title}}</h2>
           <p>{{project.description}}</p>
@@ -26,6 +26,8 @@ import palettepick from './assets/palette-pick2.png'
 export default {
   data() {
     return {
+      message: "hi",
+      show: true,
       projects: [
         {
           id: 1,
@@ -41,18 +43,24 @@ export default {
           production: "#",
           image: palettepick
         },
+        {
+          id: 3,
+          title: "Another project",
+          description: "woza",
+          production: "#",
+          image: palettepick
+        },
       ]
     }
   },
 
   methods: {
-    next () {
-      const first = this.projects.shift()
-      this.projects = this.projects.concat(first)
-    },
+
     previous () {
       const last = this.projects.pop()
-      this.projects = [last].concat(this.projects)
+      this.projects = [last].concat(this.projects)   
+      this.show = !this.show
+      setTimeout( () => this.show = !this.show, 500)
     }
   }
   
@@ -60,6 +68,17 @@ export default {
 </script>
 
 <style scoped>
+
+.slide-leave-active,
+.slide-enter-active {
+  transition: 1s;
+}
+.slide-enter {
+  transform: translate(100%, 0);
+}
+.slide-leave-to {
+  transform: translate(-100%, 0);
+}
 
   .projects-wrapper {
     display: flex;
