@@ -207,6 +207,37 @@ export default {
     background-repeat: no-repeat;
   }
 
+  @media screen and (max-width: 850px)  {
+    .projects-wrapper {
+      height: 700px;
+    }
+
+    .project-card {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 490px)  {
+    .projects-wrapper {
+      height: 780px;
+    }
+
+    .project-card {
+      margin: 50px 0;
+      width: 95%;
+    }
+
+    .project-details {
+      margin: 15px auto;
+    }
+  }
+  
+  @media screen and (max-width: 400px)  {
+    .projects-wrapper {
+      height: 780px;
+    }
+  }
+
 </style>
 
 
