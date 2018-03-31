@@ -6,6 +6,7 @@ import App from './App'
 import Home from './components/Home/Home.vue'
 import Projects from './components/Projects/Projects.vue'
 import Resume from './components/Resume/Resume.vue'
+import Waka from './components/Waka/Waka.vue'
 require('vue2-animate/dist/vue2-animate.min.css')
 
 Vue.config.productionTip = false
@@ -15,7 +16,8 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/', component: Home },
   { path: '/projects', component: Projects },
-  { path: '/resume', component: Resume }
+  { path: '/resume', component: Resume },
+  { path: '/waka', component: Waka }
 ]
 
 const router = new VueRouter({
