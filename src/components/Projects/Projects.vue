@@ -1,7 +1,6 @@
 <template>
   <div class="projects-wrapper">
-    
-    <button class='carousel-button' @click="previous"> More projects </button>
+    <button class='carousel-button' @click="previous">NEXT</button>
     <transition-group class="carousel" name="slide" tag="div">
       <section v-if="show" class="project-display" v-for="project in projects" v-bind:key="project.id">
         <article  class="project-card" :key="project.id">
@@ -128,11 +127,23 @@ export default {
 <style scoped>
 
   .carousel-button {
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #1B998B;
+    border-top: none;
+    cursor: pointer;
     width: 100px;
-    color: #FBFEF9;
-    padding: 20px;
+    font-size: 1em;
+    color: #1B998B;
+    padding: 15px 0;
+    padding-bottom: 30px;
     background: none;
+    transition: border-color .3s, color .3s;
+  }
+
+  .carousel-button:hover {
+    border-color: #FBFEF9;
+    color: #FBFEF9;
   }
 
   .slide-leave-active,
