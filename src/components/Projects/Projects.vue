@@ -1,17 +1,14 @@
 <template>
   <div class="projects-wrapper">
-    <div class='carousel-controls'>
-      <button class='carousel-controls__button' @click="previous">prev</button>
-    </div>
-
-
+    
+    <button class='carousel-button' @click="previous"> More projects </button>
     <transition-group class="carousel" name="slide" tag="div">
       <section v-if="show" class="project-display" v-for="project in projects" v-bind:key="project.id">
         <article  class="project-card" :key="project.id">
           <div class="project-image" v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"></div>
-          <h2>{{project.title}}</h2>
-          <p>{{project.description}}</p>
-          <a href=project.production>Production</a>
+          <h2 class="project-details">{{project.title}}</h2>
+          <p class="project-details">{{project.description}}</p>
+          <a class="project-details link" href=project.production>Live Page</a>
         </article>
       </section>
     </transition-group>
@@ -60,7 +57,7 @@ export default {
       const last = this.projects.pop()
       this.projects = [last].concat(this.projects)   
       this.show = !this.show
-      setTimeout( () => this.show = !this.show, 500)
+      setTimeout( () => this.show = !this.show, 400)
     }
   }
   
@@ -69,16 +66,24 @@ export default {
 
 <style scoped>
 
-.slide-leave-active,
-.slide-enter-active {
-  transition: 1s;
-}
-.slide-enter {
-  transform: translate(100%, 0);
-}
-.slide-leave-to {
-  transform: translate(-100%, 0);
-}
+  .carousel-button {
+    height: 40px;
+    width: 100px;
+    color: #FBFEF9;
+    padding: 20px;
+    background: none;
+  }
+
+  .slide-leave-active,
+  .slide-enter-active {
+    transition: 1s;
+  }
+  .slide-enter {
+    transform: translate(100%, 0);
+  }
+  .slide-leave-to {
+    transform: translate(-100%, 0);
+  }
 
   .projects-wrapper {
     display: flex;
@@ -87,7 +92,7 @@ export default {
     background-color:#383D3B;
     margin: 25px;
     overflow: hidden;
-    height: 600px;
+    height: 670px;
   }
 
   .project-display {
@@ -95,13 +100,27 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 25px;
   }
 
   .project-card {
-    height: 500px;
+    border: 1px solid #FBFEF9;
+    height: 520px;
     width: 50%;
     background-color:#FBFEF9;
     margin: 50px;
+  }
+
+  .project-details {
+    margin: 15px 10px;
+  }
+
+  a.project-details {
+    color: inherit;
+    text-decoration: none;
+    text-decoration-style: none;
+    border: 1px solid #1B998B;
+    padding: 5px;
   }
 
   .project-card:last-of-type {
