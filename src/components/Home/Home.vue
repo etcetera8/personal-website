@@ -36,15 +36,13 @@ export default {
     display: flex;
     margin: 25px;
     background: #383D3B;
-    color: #FBFEF9;
     letter-spacing: .1em;
   }
 
   .image {
     background-image: url('../../assets/dio.jpg');
     background-size: cover;
-    width: 400px;
-    height: 400px;
+    width: 450px;
     min-width: 33%;
   }
 
@@ -52,6 +50,8 @@ export default {
   }
 
   .hi {
+    color: #FBFEF9;
+    font-size: 1.3em;
     margin: 25px;
   }
 
