@@ -6,6 +6,7 @@ import App from './App'
 import Home from './components/Home/Home.vue'
 import Projects from './components/Projects/Projects.vue'
 import Resume from './components/Resume/Resume.vue'
+require('vue2-animate/dist/vue2-animate.min.css')
 
 Vue.config.productionTip = false
 

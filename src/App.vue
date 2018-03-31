@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <Header />
+    <transition
+      name="bounce"
+      enter-active-class="slideInLeft"
+      leave-active-class="slideOutRight"
+    >
       <router-view></router-view>
+    </transition>
   </div>
 </template>
 
