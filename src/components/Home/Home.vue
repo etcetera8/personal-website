@@ -11,9 +11,9 @@
       </section>
     </div>
     <section class="social">
-      <article class="icon linkedin"></article>
-      <article class="icon twitter"></article>
-      <article class="icon github"></article>
+      <a href="www.linkedin.com/in/parker-lindley"><article class="icon linkedin"></article></a>
+      <a href="https://twitter.com/pshark8"><article class="icon twitter"></article></a>
+      <a href="https://github.com/etcetera8"><article class="icon github"></article></a>
     </section>
   </div>
 </template>
@@ -68,30 +68,43 @@ export default {
     width: 50%;
   }
 
+  @keyframes bounce {
+    25% {width: 90px; height: 90px;}
+    50% {width: 100px; height: 100px;}
+  }
+
   .icon {
+    background: #383D3B;
     border: 5px solid #383D3B;
+    background-size: cover;
     border-radius: 2px;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     cursor: pointer;
+    animation-play-state: paused;
+    transition: background-color .2s, border-color .2s;
+  }
+
+  .icon:hover {
+    animation-play-state: running;
+    -webkit-animation: bounce .3s;
+    animation: bounce .3s;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    background-color: #1B998B;
+    border-color:#1B998B;
   }
 
   .linkedin {
-    background: #383D3B;
     background-image: url('../../assets/linkedin3.png');
-    background-size: cover;
   }
 
   .twitter {
-    background: #383D3B;
     background-image: url('../../assets/twitter.png');
-    background-size: cover;
   }
 
   .github {
-    background: #383D3B;
     background-image: url('../../assets/github2.png');
-    background-size: cover;
   }
 
 </style>
