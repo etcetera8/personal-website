@@ -1,21 +1,27 @@
 <template>
   <div class="projects-wrapper">
-    <section class="project-display" v-for="project in projects" v-bind:key="project.id">
-      <article class="project-card">
-        <div class="project-image" v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"></div>
-        <h2>{{project.title}}</h2>
-        <p>{{project.description}}</p>
-        <a href=project.production>Production</a>
-      </article>
-    </section>
-    
+    <div class='carousel-controls'>
+      <button class='carousel-controls__button' @click="previous">prev</button>
+      <button class='carousel-controls__button' @click="next">next</button>
+    </div>
 
+    <transition-group class="carousel" name="slideLeft" tag="div">
+      <section class="project-display" v-for="project in projects" v-bind:key="project.id">
+        <article class="project-card" :key="project.id">
+          <div class="project-image" v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"></div>
+          <h2>{{project.title}}</h2>
+          <p>{{project.description}}</p>
+          <a href=project.production>Production</a>
+        </article>
+      </section>
+    </transition-group>
+    
   </div>
 </template>
 
 <script>
 import koglock from './assets/koglock.png'
-//import koglock from './assets/koglock.png'
+import palettepick from './assets/palette-pick2.png'
 
 export default {
   data() {
@@ -33,9 +39,20 @@ export default {
           title: "Palette Picker",
           description: "A color generator",
           production: "#",
-          image: "./assets/koglock.png"
+          image: palettepick
         },
       ]
+    }
+  },
+
+  methods: {
+    next () {
+      const first = this.projects.shift()
+      this.projects = this.projects.concat(first)
+    },
+    previous () {
+      const last = this.projects.pop()
+      this.projects = [last].concat(this.projects)
     }
   }
   
@@ -45,15 +62,20 @@ export default {
 <style scoped>
 
   .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color:#383D3B;
     margin: 25px;
-    overflow-y: scroll;
+    overflow: hidden;
+    height: 600px;
   }
 
   .project-display {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    overflow: hidden;
   }
 
   .project-card {
@@ -63,14 +85,15 @@ export default {
     margin: 50px;
   }
 
-  .project-image {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
+  .project-card:last-of-type {
+    opacity: 1;
   }
 
-
-
+  .project-image {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+  }
 
 </style>
 
