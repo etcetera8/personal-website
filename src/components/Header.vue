@@ -3,7 +3,7 @@
      <h1 id="name">Parker Lindley</h1>
 
     <nav>
-      <router-link to="/"><button class="ui button about">ABOUT</button></router-link>
+      <router-link to="/" exact><button class="ui button about">ABOUT</button></router-link>
       <router-link to="/projects"><button class="ui button projects">PROJECTS</button></router-link>
       <router-link to="/resume"><button class="ui button resume">RESUME</button></router-link>
     </nav>
@@ -60,6 +60,11 @@ export default {
   }
 
   .button:hover {
+    background: #FBFEF9;
+    color: #1B998B;
+  }
+
+  .router-link-active button {
     background: #FBFEF9;
     color: #1B998B;
   }
