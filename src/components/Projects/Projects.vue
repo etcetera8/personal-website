@@ -129,21 +129,22 @@ export default {
   .carousel-button {
     display: flex;
     justify-content: center;
-    border: 1px solid #1B998B;
+    border: 1px solid #FBFEF9;
     border-top: none;
     cursor: pointer;
     width: 100px;
     font-size: 1em;
-    color: #1B998B;
+    color: #FBFEF9;
     padding: 15px 0;
     padding-bottom: 30px;
     background: none;
-    transition: border-color .3s, color .3s;
+    transition: border-color .3s, color .3s, background .3s;
   }
 
   .carousel-button:hover {
-    border-color: #FBFEF9;
-    color: #FBFEF9;
+    border-color: #1B998B;
+    background: #FBFEF9;
+    color: #1B998B;
   }
 
   .slide-leave-active,
@@ -204,8 +205,16 @@ export default {
     text-decoration: none;
     text-decoration-style: none;
     border: 1px solid #1B998B;
+    color:#1B998B;
     padding: 5px;
+    transition: background .3s, color .3s;
   }
+
+  a.project-details:hover {
+    background: #1B998B;
+    color: #FBFEF9;
+  }
+
 
   .project-card:last-of-type {
     opacity: 1;
