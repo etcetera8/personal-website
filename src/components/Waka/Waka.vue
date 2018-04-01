@@ -24,8 +24,6 @@ export default {
 
   },
 
-
-
   methods: {
     getJson() {
       $.ajax({
