@@ -1,7 +1,10 @@
 <template>
-   <header class="ui huge header">
-     <h1 id="name">Parker Lindley</h1>
-
+  <header class="ui huge header">
+    <div class="title-wrapper">
+      <h1 id="name">Parker Lindley</h1>
+      <h4 class="subtitle role">Front-End Developer </h4>
+      <h5 class="subtitle contact">parker.t.lindley@gmail.com</h5>
+    </div>
     <nav>
       <router-link to="/" exact><button class="ui button about">ABOUT</button></router-link>
       <router-link to="/projects"><button class="ui button projects">PROJECTS</button></router-link>
@@ -25,20 +28,32 @@ export default {
 </script>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css?family=Chivo|Yantramanav');
+
 
   .header {
     display: flex;
+    font-family: 'Chivo', sans-serif;
     justify-content: space-between;
     align-content: center;
-    align-items: center;
     color: #FBFEF9;
-    height: 70px;
+    height: 120px;
     background: #1B998B;
 
   }
 
   h1 {
-    margin-left: 15px;
+    margin: 10px 15px;
+    
+  }
+
+  .subtitle {
+    margin: 4px 15px;
+    color: #FBFEF9;
+  }
+
+  .contact {
+    text-decoration: underline;
   }
 
   nav {

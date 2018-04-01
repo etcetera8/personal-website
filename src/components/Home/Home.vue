@@ -14,6 +14,7 @@
       <a href="www.linkedin.com/in/parker-lindley"><article class="icon linkedin"></article></a>
       <a href="https://twitter.com/pshark8"><article class="icon twitter"></article></a>
       <a href="https://github.com/etcetera8"><article class="icon github"></article></a>
+      <article class="icon email"></article>
     </section>
   </div>
 </template>
@@ -44,9 +45,6 @@ export default {
     background-size: cover;
     width: 450px;
     min-width: 33%;
-  }
-
-  .about {
   }
 
   .hi {
@@ -105,6 +103,10 @@ export default {
 
   .github {
     background-image: url('../../assets/github2.png');
+  }
+  
+  .email {
+    background-image: url('../../assets/mail.png');
   }
 
 </style>
