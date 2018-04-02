@@ -14,7 +14,6 @@
       <a href="www.linkedin.com/in/parker-lindley"><article class="icon linkedin"></article></a>
       <a href="https://twitter.com/pshark8"><article class="icon twitter"></article></a>
       <a href="https://github.com/etcetera8"><article class="icon github"></article></a>
-      <article class="icon email"></article>
     </section>
   </div>
 </template>
@@ -41,7 +40,7 @@ export default {
   }
 
   .image {
-    background-image: url('../../assets/dio.jpg');
+    background-image: url('../../assets/bike.jpg');
     background-size: cover;
     width: 450px;
     min-width: 33%;
