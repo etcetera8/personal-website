@@ -16,6 +16,7 @@
     "express": "^4.16.3",
     "semantic-ui": "^2.3.1",
     "vue": "^2.5.2",
+    "vue-history-api-fallback": "^1.0.3",
     "vue-router": "^3.0.1",
     "vue2-animate": "^1.0.4"
   },
