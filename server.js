@@ -18,5 +18,5 @@ app.get('/', function (req, res) {
 
 const server = app.listen(process.env.PORT || 5000, function () {
   const port = server.address().port;
-  console.log("App now running on port", port);
+  console.log("App now running on the port", port);
 });
