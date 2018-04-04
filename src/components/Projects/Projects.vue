@@ -8,8 +8,8 @@
           <h2 class="project-details">{{project.title}}</h2>
           <p class="project-details paragraph">{{project.description}}</p>
           <div class="btn-wrapper">
-            <a class="project-details link" href=project.production>Live Page</a>
-            <a class="project-details link" href=project.github>GitHub</a>
+            <a class="project-details link" :href="project.production">Live Page</a>
+            <a class="project-details link" :href="project.github">GitHub</a>
           </div>
         </article>
       </section>
