@@ -24,6 +24,8 @@ const router = new VueRouter({
   routes,
   mode: 'history'
 })
+
+history({router})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
