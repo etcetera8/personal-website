@@ -2,8 +2,8 @@
   <header class="ui huge header">
     <div class="title-wrapper">
       <h1 id="name">Parker Lindley</h1>
-      <h4 class="subtitle role">Front-End Developer </h4>
-      <h5 class="subtitle contact">parker.t.lindley@gmail.com</h5>
+      <h4 class="subtitle role">Front-End Developer</h4>
+      <h5 class="subtitle contact"><a href="mailto:parker.t.lindley@gmail.com" target="_blank">parker.t.lindley@gmail.com</a></h5>
     </div>
     <nav>
       <router-link to="/" exact><button class="ui button about">ABOUT</button></router-link>
@@ -30,7 +30,6 @@ export default {
 <style scoped>
   @import url('https://fonts.googleapis.com/css?family=Chivo|Yantramanav');
 
-
   .header {
     display: flex;
     font-family: 'Chivo', sans-serif;
@@ -38,13 +37,16 @@ export default {
     align-content: center;
     color: #FBFEF9;
     height: 120px;
-    background: #1B998B;
+    background: linear-gradient(110deg, #383D3B, #1B998B);
+  }
 
+  a {
+    text-decoration: none;
+    color: #FBFEF9;
   }
 
   h1 {
     margin: 10px 15px;
-    
   }
 
   .subtitle {

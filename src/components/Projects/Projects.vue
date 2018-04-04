@@ -127,20 +127,23 @@ export default {
 <style scoped>
 
   .carousel-button {
+    margin: 25px;
     display: flex;
     justify-content: center;
-    border: 1px solid #FBFEF9;
-    border-top: none;
+    align-self: flex-start;
+    border: 1px solid #84DCC6;
     cursor: pointer;
+    height: 40px;
     width: 100px;
     font-size: 1em;
     color: #FBFEF9;
     padding: 15px 0;
     padding-bottom: 30px;
     background: none;
-    transition: border-color .3s, color .3s, background .3s;
+    transition: border-color .2s, color .2s, background .3s;
   }
 
+  
   .carousel-button:hover {
     border-color: #1B998B;
     background: #FBFEF9;

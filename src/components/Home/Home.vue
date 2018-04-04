@@ -11,7 +11,7 @@
       </section>
     </div>
     <section class="social">
-      <a href="www.linkedin.com/in/parker-lindley"><article class="icon linkedin"></article></a>
+      <a href="https://www.linkedin.com/in/parker-lindley"><article class="icon linkedin"></article></a>
       <a href="https://twitter.com/pshark8"><article class="icon twitter"></article></a>
       <a href="https://github.com/etcetera8"><article class="icon github"></article></a>
     </section>
@@ -30,6 +30,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 2em;
   }
 
   .wrapper {
@@ -53,7 +54,6 @@ export default {
   }
 
   .hi::first-letter {
-    color: #84DCC6;
     font-size: 1.1em;
     font-weight: bold;
   }

@@ -45,6 +45,8 @@ export default {
     display: flex;
     background-color:#383D3B;
     margin: 25px;
+    line-height: 2em;
+
   }
 
   .waka-display {
