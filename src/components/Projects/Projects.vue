@@ -28,7 +28,7 @@ import trail from './assets/trail.png'
 import movie from './assets/movie.png'
 import drapac from './assets/drapac.png'
 import joust from './assets/joust.png'
-
+import co_api from './assets/co_api.png'
 export default {
   data() {
     return {
@@ -69,11 +69,11 @@ export default {
         },
         {
           id: 5,
-          title: "Weatherly",
-          description: "A React weather app utiling asynchronous JavaScript and tested with Jest and Enzyme. This was a pair project where we set out with the goal to create a weather app that stood out from what most people are familiar with. We created a very simplistic UI with loading indication for improved UX. The user is able to search cities with a prefix trie npm package that I developed. The app utilizes local storage so the user is only prompted once for their location and do not have to visit the welcome screen again." ,
-          production: "http://weatherly.surge.sh/",
-          github: "https://github.com/etcetera8/weatherly",
-          image: weatherly
+          title: "Joust",
+          description: "I set out to recreate my favorite arcade game of all time. This project is pure Vanilla JS with extensive use of OOP. All physics and collision detection were written from scratch. The game is two playe so grab a friend and getter ready to Joust! jk",
+          production: "http://joust-clone.surge.sh/",
+          github: "https://github.com/etcetera8/game-time",
+          image: joust
         },
         {
           id: 6,
@@ -100,13 +100,21 @@ export default {
           image: drapac
         },
         {
-          id: 9,
-          title: "Joust",
-          description: "I set out to recreate my favorite arcade game of all time. This project is pure Vanilla JS with extensive use of OOP. All physics and collision detection were written from scratch. The game is two playe so grab a friend and getter ready to Joust! jk",
-          production: "http://joust-clone.surge.sh/",
-          github: "https://github.com/etcetera8/game-time",
-          image: joust
-        }
+          id: 5,
+          title: "Weatherly",
+          description: "A React weather app utiling asynchronous JavaScript and tested with Jest and Enzyme. This was a pair project where we set out with the goal to create a weather app that stood out from what most people are familiar with. We created a very simplistic UI with loading indication for improved UX. The user is able to search cities with a prefix trie npm package that I developed. The app utilizes local storage so the user is only prompted once for their location and do not have to visit the welcome screen again." ,
+          production: "http://weatherly.surge.sh/",
+          github: "https://github.com/etcetera8/weatherly",
+          image: weatherly
+        },
+        {
+          id: 10,
+          title: "Colorado Superfund API",
+          description: "This is a Postgresql backend built using Node, Express and Knex. The endpoints for patching, deleting and editing data are secured with JSON webtokens. The data was all gathered with Nightmare by web-scraping the EPA's website.  If you really want to test the functionality of those please let me know and I can give you the keyword for access. Otherwise the docs have all the info for accessing the public endpoints. This project was built in four days.",
+          production: "https://byob-pichelle.herokuapp.com/",
+          github: "https://github.com/etcetera8/CO-superfund-api",
+          image: co_api
+        },
       ]
     }
   },
@@ -143,7 +151,6 @@ export default {
     transition: border-color .2s, color .2s, background .3s;
   }
 
-  
   .carousel-button:hover {
     border-color: #1B998B;
     background: #FBFEF9;
