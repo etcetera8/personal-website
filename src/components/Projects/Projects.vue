@@ -175,7 +175,8 @@ export default {
     background-color:#383D3B;
     margin: 25px;
     overflow: hidden;
-    height: 670px;
+    min-height: 711px;
+    max-height: 790px;
   }
 
   .project-display {
