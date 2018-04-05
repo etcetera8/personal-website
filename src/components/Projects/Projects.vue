@@ -128,7 +128,6 @@ export default {
       setTimeout( () => this.show = !this.show, 400)
     }
   }
-  
 }
 </script>
 

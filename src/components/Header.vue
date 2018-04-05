@@ -16,19 +16,8 @@
 
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
-</script>
-
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Chivo|Yantramanav');
+  @import url('https://fonts.googleapis.com/css?family=Chivo');
 
   .header {
     display: flex;

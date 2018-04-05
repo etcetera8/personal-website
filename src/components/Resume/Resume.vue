@@ -1,6 +1,5 @@
 <template>
   <div class="resume-wrapper">
-
     <form method="get" action="../../static/Parker_Lindley_Resume.pdf">
       <button class="download" type="submit">Download</button>
     </form>
