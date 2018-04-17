@@ -1,6 +1,8 @@
 <template>
   <div class="projects-wrapper">
-    <button class='carousel-button' @click="previous">NEXT</button>
+    <button class='carousel-button' @click="previous">
+      VIEW NEXT
+    </button>
     <div class="indicator">
       <span 
         class="dot" 
@@ -28,8 +30,7 @@
 </template>
 
 <script>
-import {projects} from '../../../projects'
-
+import { projects } from '../../../projects';
 export default {
   data() {
     return {
@@ -66,13 +67,14 @@ export default {
 <style scoped>
 
   .carousel-button {
-    margin: 25px;
     display: flex;
+    align-self: unset;
     justify-content: center;
-    align-self: flex-start;
+    flex-basis: 100%;
+    margin-top: 30px;
+    height: 500px;
     border: 1px solid #84DCC6;
     cursor: pointer;
-    height: 40px;
     width: 100px;
     font-size: 1em;
     color: #FBFEF9;
@@ -82,21 +84,22 @@ export default {
     transition: border-color .2s, color .2s, background .3s;
   }
 
+  .chevron {
+    height: 7%;
+    width: 12%;
+  }
+
   .indicator {
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: space-around;
+    width: 60%;
     height: 125px;
+    margin-top: 40px;
   }
 
   .dot {
-    border: 7px solid rgba(255, 255, 255, .4);
+    border: 7px solid rgba(255, 255, 255, .3);
     border-radius: 50%;
-  }
-
-  .indicator-dot {
-    color: white;
-    display: inline-block;
   }
 
   .active {
@@ -128,7 +131,7 @@ export default {
     margin: 25px;
     overflow: hidden;
     min-height: 711px;
-    max-height: 790px;
+    max-height: 800px;
   }
 
   .project-display {
@@ -192,7 +195,7 @@ export default {
 
   @media screen and (max-width: 850px)  {
     .projects-wrapper {
-      height: 700px;
+      height: 800px;
     }
 
     .project-card {
