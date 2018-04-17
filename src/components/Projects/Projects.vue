@@ -2,15 +2,13 @@
   <div class="projects-wrapper">
     <button class='carousel-button' @click="previous">NEXT</button>
     <div class="indicator">
-    <span 
-      class="indicator-dot" 
-      v-for="project in projects" 
-      :key="project.id"
-      :data="project.id"
-      v-bind:class="getClass(project.id)"
-    >
-      {{project.id}}
-    </span>
+      <span 
+        class="dot" 
+        v-for="(number, index) in projectMatches" 
+        :key="index"
+        :data="number"
+        v-bind:class="getClass(index)"
+      ></span>
     </div>
     <transition-group class="carousel" name="slide" tag="div">
       <section v-if="show" class="project-display" v-for="project in projects" v-bind:key="project.id">
@@ -37,6 +35,7 @@ export default {
     return {
       show: true,
       projects: projects,
+      projectMatches: this.numProjects(projects),
       current: projects[0]
     }
   },
@@ -51,9 +50,14 @@ export default {
     },
 
     getClass(id) {
-      console.log("dot id: ", id, "currentCard id: ", this.current.id)
-      return id === this.current.id ? 'active' : 'na'
+      return id === this.current.id ? 'active' : '';
     },
+
+    numProjects(projects) {
+      return projects.map((project, index) => {
+        return index - 1;
+      })
+    }
 
   }
 }
@@ -85,17 +89,18 @@ export default {
     height: 125px;
   }
 
+  .dot {
+    border: 7px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+  }
+
   .indicator-dot {
     color: white;
     display: inline-block;
   }
 
   .active {
-    color: red;
-  }
-
-  .na {
-    color: blue;
+    border: 7px solid rgba(255, 255, 255, 1);
   }
 
   .carousel-button:hover {
