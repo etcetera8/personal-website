@@ -1,6 +1,17 @@
 <template>
   <div class="projects-wrapper">
     <button class='carousel-button' @click="previous">NEXT</button>
+    <div class="indicator">
+    <span 
+      class="indicator-dot" 
+      v-for="project in projects" 
+      :key="project.id"
+      :data="project.id"
+      v-bind:class="getClass(project.id)"
+    >
+      {{project.id}}
+    </span>
+    </div>
     <transition-group class="carousel" name="slide" tag="div">
       <section v-if="show" class="project-display" v-for="project in projects" v-bind:key="project.id">
         <article  class="project-card" :key="project.id">
@@ -25,18 +36,25 @@ export default {
   data() {
     return {
       show: true,
-      projects: projects 
+      projects: projects,
+      current: projects[0]
     }
   },
 
   methods: {
     previous () {
       const last = this.projects.pop();
-      console.log(last);
+      this.current = last
       this.projects = [last].concat(this.projects);
       this.show = !this.show;
       setTimeout( () => this.show = !this.show, 400);
-    }
+    },
+
+    getClass(id) {
+      console.log("dot id: ", id, "currentCard id: ", this.current.id)
+      return id === this.current.id ? 'active' : 'na'
+    },
+
   }
 }
 </script>
@@ -58,6 +76,26 @@ export default {
     padding-bottom: 30px;
     background: none;
     transition: border-color .2s, color .2s, background .3s;
+  }
+
+  .indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 125px;
+  }
+
+  .indicator-dot {
+    color: white;
+    display: inline-block;
+  }
+
+  .active {
+    color: red;
+  }
+
+  .na {
+    color: blue;
   }
 
   .carousel-button:hover {
