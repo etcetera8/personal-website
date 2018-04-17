@@ -4,7 +4,7 @@
       <figure><embed src="https://wakatime.com/share/@2c90c59e-1b11-4af6-850f-8ba65cdc1447/defbbcf9-7cf7-4366-afa1-11539692078f.svg"></embed></figure>
     </section>
     <section class="waka-description">
-      <p class="hi">This is a breakdown of the languagues I'm using the most at this moment although I'm always more than willing to dive into some new languages or frameworks and see what I can make happen.</p>
+      <p class="hi">This is a breakdown of the languages I'm using although I'm always more than willing to dive into some new languages or frameworks and see what I can make happen.</p>
     </section>
   </div>
 </template>
