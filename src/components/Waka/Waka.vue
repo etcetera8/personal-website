@@ -13,30 +13,28 @@
 
 export default {
 
-  created() {
+  created () {
     this.getJson()
   },
 
-  data() {
+  data () {
     return {
       langs: []
     }
-
   },
 
   methods: {
-    getJson() {
+    getJson () {
       $.ajax({
         type: 'GET',
         url: 'https://wakatime.com/share/@2c90c59e-1b11-4af6-850f-8ba65cdc1447/2898024a-aac7-4588-9473-2488ffd6ed2d.json',
         dataType: 'jsonp',
-        success: function(response) {
+        success: function (response) {
           this.langs = [...response.data]
-        },
-      });
+        }
+      })
     }
   }
-  
 }
 </script>
 
@@ -55,9 +53,7 @@ export default {
     min-height: 600px;
   }
 
-
   .waka-description {
     width: 33%;
   }
 </style>
-

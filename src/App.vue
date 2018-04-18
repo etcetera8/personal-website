@@ -24,10 +24,9 @@ export default {
 </script>
 
 <style>
-/* #1B998B green*/
-textarea, 
-input, 
-button { 
+textarea,
+input,
+button {
   outline: none; 
 }
 

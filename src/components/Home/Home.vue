@@ -97,10 +97,9 @@
   .github {
     background-image: url('../../assets/github2.png');
   }
-  
+
   .email {
     background-image: url('../../assets/mail.png');
   }
 
 </style>
-

@@ -24,7 +24,7 @@
     transition: background 0.2s, color 0.2s;
     cursor: pointer;
   }
-  
+
   .download:hover {
     background: #FBFEF9;
     color: #1B998B;
@@ -43,7 +43,6 @@
     height: 900px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../../assets/project_assets/resume.png'); 
+    background-image: url('../../assets/project_assets/resume.png');
   }
 </style>
-

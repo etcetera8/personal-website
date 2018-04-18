@@ -4,9 +4,9 @@
       VIEW NEXT
     </button>
     <div class="indicator">
-      <span 
-        class="dot" 
-        v-for="(number, index) in projectMatches" 
+      <span
+        class="dot"
+        v-for="(number, index) in projectMatches"
         :key="index"
         :data="number"
         v-bind:class="getClass(index)"
@@ -25,14 +25,13 @@
         </article>
       </section>
     </transition-group>
-    
   </div>
 </template>
 
 <script>
-import { projects } from '../../../projects';
+import { projects } from '../../../projects'
 export default {
-  data() {
+  data () {
     return {
       show: true,
       projects: projects,
@@ -43,23 +42,22 @@ export default {
 
   methods: {
     previous () {
-      const last = this.projects.pop();
+      const last = this.projects.pop()
       this.current = last
-      this.projects = [last].concat(this.projects);
-      this.show = !this.show;
-      setTimeout( () => this.show = !this.show, 400);
+      this.projects = [last].concat(this.projects)
+      this.show = !this.show
+      setTimeout( () => this.show = !this.show, 400)
     },
 
-    getClass(id) {
-      return id === this.current.id ? 'active' : '';
+    getClass (id) {
+      return id === this.current.id ? 'active' : ''
     },
 
-    numProjects(projects) {
+    numProjects (projects) {
       return projects.map((project, index) => {
-        return index - 1;
+        return index - 1
       })
     }
-
   }
 }
 </script>
@@ -181,7 +179,6 @@ export default {
     color: #FBFEF9;
   }
 
-
   .project-card:last-of-type {
     opacity: 1;
   }
@@ -217,7 +214,7 @@ export default {
       margin: 15px auto;
     }
   }
-  
+
   @media screen and (max-width: 400px)  {
     .projects-wrapper {
       height: 780px;
@@ -225,5 +222,3 @@ export default {
   }
 
 </style>
-
-
