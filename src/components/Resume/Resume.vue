@@ -43,7 +43,7 @@
     height: 900px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../projects/assets/resume.png'); 
+    background-image: url('../../assets/project_assets/resume.png'); 
   }
 </style>
 
