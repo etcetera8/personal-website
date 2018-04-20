@@ -8,6 +8,8 @@ import movie from './src/assets/project_assets/movie.png'
 import drapac from './src/assets/project_assets/drapac.png'
 import joust from './src/assets/project_assets/joust.png'
 import co_api from './src/assets/project_assets/co_api.png'
+import espeak from './src/assets/project_assets/espeak.png'
+import ridecast from './src/assets/project_assets/ridecast.png'
 
 export const projects = [
   {
@@ -89,5 +91,21 @@ export const projects = [
     production: "https://byob-pichelle.herokuapp.com/",
     github: "https://github.com/etcetera8/CO-superfund-api",
     image: co_api
+  },
+  {
+    id: 10,
+    title: "eSpeak",
+    description: "This application was my group capstone project for Turing school. We leveraged the skills we have learned over the course of Turing. The purpose of eSpeak is to provide users with a way to learn and practice their Spanish vocabulary. The front end was built in React Native, the back end was built in PostgreSQL, Node, Express, and  Knex. We used Firebase for user authentication and authorization. After creating an account and logging in, a user can go through the flash cards we have set up for them to practice their Spanish vocabulary. The user recieves points as they move throught the cards and unlock levels.",
+    production: "#",
+    github: "https://github.com/etcetera8/eSpeak",
+    image: espeak
+  },
+  {
+    id: 11,
+    title: "Ride Cast",
+    description: "This is an application that takes real cycling data from a mounted computer and maps the polyline. The user is also presented a graph of power data over time. The user is able to select areas on the power graph and have the relevant areas on the map highlighted. There is also a graph display of max heart rates and best power averages for 1, 5, 10, 15, and 20 minute power averages. This app was built using React, Google Maps Api and React Charts.",
+    production: "https://ride-cast.herokuapp.com/",
+    github: "#",
+    image: ridecast
   },
 ]
