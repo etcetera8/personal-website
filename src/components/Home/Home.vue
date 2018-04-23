@@ -14,6 +14,7 @@
       <a href="https://www.linkedin.com/in/parker-lindley"><article class="icon linkedin"></article></a>
       <a href="https://twitter.com/pshark8"><article class="icon twitter"></article></a>
       <a href="https://github.com/etcetera8"><article class="icon github"></article></a>
+      <a href="https://medium.com/@parkerthomas_2392"><article class="icon medium"></article></a>
     </section>
   </div>
 </template>
@@ -96,6 +97,10 @@
 
   .github {
     background-image: url('../../assets/github2.png');
+  }
+  
+  .medium {
+    background-image: url('../../assets/medium.png');
   }
 
   .email {

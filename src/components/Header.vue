@@ -17,11 +17,11 @@
 </template>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Chivo');
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
 
   .header {
     display: flex;
-    font-family: 'Chivo', sans-serif;
+    font-family: 'Raleway', sans-serif;
     justify-content: space-between;
     align-content: center;
     color: #FBFEF9;
