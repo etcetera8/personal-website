@@ -98,7 +98,7 @@
   .github {
     background-image: url('../../assets/github2.png');
   }
-  
+
   .medium {
     background-image: url('../../assets/medium.png');
   }

@@ -19,8 +19,8 @@
           <h2 class="project-details">{{project.title}}</h2>
           <p class="project-details paragraph">{{project.description}}</p>
           <div class="btn-wrapper">
-            <a class="project-details link" :href="project.production">Live Page</a>
-            <a class="project-details link" :href="project.github">GitHub</a>
+            <a :class="[project.live ? link : disabled]" :href="project.production">Live Page</a>
+            <a :class="[project.gh ? link : disabled]" :href="project.github">GitHub</a>
           </div>
         </article>
       </section>
@@ -36,7 +36,9 @@ export default {
       show: true,
       projects: projects,
       projectMatches: this.numProjects(projects),
-      current: projects[0]
+      current: projects[0],
+      link: "project-details",
+      disabled: "disabled"
     }
   },
 
@@ -46,7 +48,7 @@ export default {
       this.current = last
       this.projects = [last].concat(this.projects)
       this.show = !this.show
-      setTimeout( () => this.show = !this.show, 400)
+      setTimeout(() => this.show = !this.show, 400)
     },
 
     getClass (id) {
@@ -86,6 +88,8 @@ export default {
     height: 7%;
     width: 12%;
   }
+
+
 
   .indicator {
     display: flex;
@@ -156,7 +160,7 @@ export default {
     margin-bottom: 25px;
   }
 
-  .project-details {
+  .project-details, .disabled {
     margin: 15px 10px;
   }
 
@@ -164,7 +168,7 @@ export default {
     flex-grow: 1;
   }
 
-  a.project-details {
+  a.project-details, .disabled {
     color: inherit;
     text-decoration: none;
     text-decoration-style: none;
@@ -177,6 +181,13 @@ export default {
   a.project-details:hover {
     background: #1B998B;
     color: #FBFEF9;
+  }
+
+  a.disabled {
+    cursor: default;
+    color: gray;
+    border: 1px solid gray;
+    background: lightgrey;
   }
 
   .project-card:last-of-type {

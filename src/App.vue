@@ -27,7 +27,7 @@ export default {
 textarea,
 input,
 button {
-  outline: none; 
+  outline: none;
 }
 
 html, body {

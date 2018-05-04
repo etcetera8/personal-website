@@ -18,7 +18,9 @@ export const projects = [
     description: "Kog Locker is a cycling-oriented social and personal motivation application. It's built using React, Router, Redux and uses an Express backend to handle the user authentication and API calls to the Strava endpoints. The app features \"gamification\" with hand-rolled badges, targeting of a segment of the users choice and visualizing it with the Google maps API, relevant and most interesting statistics, and lazy loading of images that the user has taken through various activities.",
     production: "https://kog-lockr.herokuapp.com/",
     github: "https://github.com/etcetera8/kog-locker",
-    image: koglock
+    image: koglock,
+    gh: true,
+    live: true
   },
   {
     id: 1,
@@ -26,7 +28,9 @@ export const projects = [
     description: "A Postgresql/Node/Express backend with a jQuery frontend mimicking the functionality of Coolers or other palette generators. The user is able to create new projects and store unlimited palettes within those projects. The color bars have the ability to be locked to zero in on their desired palette. When the user revisits the page they are able to click on any saved palette in a project and have the color bars display that palette.",
     production: "https://parkerspalettepicker.herokuapp.com/",
     github: "https://github.com/etcetera8/pallete-picker",
-    image: palettepick
+    image: palettepick,
+    gh: true,
+    live: true
   },
   {
     id: 2,
@@ -34,7 +38,9 @@ export const projects = [
     description: "This React app takes in kindergarten attendance rates for all Colorado school districts. The user is able to live search for any district they wish to find with the results narrowing down as they type. As soon as two districts are selected a comparison card appears that shows the users the ratio of attendance rates between the two districts. The user can also toggle selection by clicking again on any card or clearing out the entire comparison container. The project is unit and integration tested with Jest and Enzyme. I wanted to make it visually appealing and decided to mimick my own IDE colors.",
     production: "http://headcount2.surge.sh/",
     github: "https://github.com/etcetera8/headcount2.0",
-    image: headcount
+    image: headcount,
+    gh: true,
+    live: true
   },
   {
     id: 3,
@@ -42,7 +48,9 @@ export const projects = [
     description: "I created this project using the Star Wars API, React, asynchronus JS and a full unit and integration testing suite with Jest and Enzyme. When the user first visits the site they are immediately greeted with scrolling text from one of the Star Wars movies. As the user clicks on one of the three categories, people, planets, or vehicles, another fetch call is made and they are shown 10 of that category. Users have the ability to favorite cards. When they visits the favorites tab they are able to see all of their favorited cards where they can defavorite them if wanted. I implemented local storage to increase the performance and limit API calls",
     production: "http://swapi-box.surge.sh/",
     github: "https://github.com/etcetera8/swapi-box",
-    image: swapi
+    image: swapi,
+    gh: true,
+    live: true
   },
   {
     id: 4,
@@ -50,7 +58,9 @@ export const projects = [
     description: "I set out to recreate my favorite arcade game of all time. This project is pure Vanilla JS and HTML5 canvas with extensive use of OOP. All physics and collision detection were written from scratch. The game is two player so grab a friend and getter ready to Joust! The largest challenges I came across was writing the collision detection and finding and implementing half decent sprite images.",
     production: "http://joust-clone.surge.sh/",
     github: "https://github.com/etcetera8/game-time",
-    image: joust
+    image: joust,
+    gh: true,
+    live: true
   },
   {
     id: 5,
@@ -58,15 +68,19 @@ export const projects = [
     description: "One of the first websites I ever created using Vanilla JS and the MTB Project API. I had just moved to Colorado and was overwhelmed with choices in trails to ride near my house. I essentially created a tool that I could filter trails down based on difficulty and distance from my current position. Its how I found my go to 'after work' ride at White Rance Park. One day I would like to revisit this project with Vue or React.",
     production: "https://etcetera8.github.io/brapBrapProject/",
     github: "https://github.com/etcetera8/brapBrapProject",
-    image: trail
+    image: trail,
+    gh: true,
+    live: true
   },
   {
     id: 6,
     title: "Movie Tracker",
     description: "A React, Router, Redux, Node/Express, Postrgresql project. The user has the ability to either sign-up for an account or sign-in. Once signed in the app allows the user to find information on recent movie releases, ratings, and save them as favorites. The user is able to logout, and come back anytime to find their favorites still persisting.",
-    production: "https://github.com/etcetera8/movie-tracker",
+    production: "#",
     github: "https://github.com/etcetera8/movie-tracker",
-    image: movie
+    image: movie,
+    gh: true,
+    live: false
   },
   {
     id: 7,
@@ -74,7 +88,9 @@ export const projects = [
     description: "This was a code challenge where I was given a static comp to recreate with my own theme yet maintain the structure of the comp. There were no guidelines for responsive design but it was expected to be pleasing and usable. I handled the responsiveness with flexbox and it works on all size devices. I thoroughly enjoyed working on this project and would like to one day make a 'fantasy cycling team' app using this wireframe as the design.",
     production: "https://etcetera8.github.io/pl-comp-challenge-2/",
     github: "https://github.com/etcetera8/pl-comp-challenge-2",
-    image: drapac
+    image: drapac,
+    gh: true,
+    live: true
   },
   {
     id: 8,
@@ -82,7 +98,9 @@ export const projects = [
     description: "A React weather app utiling asynchronous JavaScript and tested with Jest and Enzyme. This was a pair project where we set out with the goal to create a weather app that stood out from what most people are familiar with. We created a very simplistic UI with loading indication for improved UX. The user is able to search cities with a prefix trie npm package that I developed. The app utilizes local storage so the user is only prompted once for their location and do not have to visit the welcome screen again.",
     production: "http://weatherly.surge.sh/",
     github: "https://github.com/etcetera8/weatherly",
-    image: weatherly
+    image: weatherly,
+    gh: true,
+    live: true
   },
   {
     id: 9,
@@ -90,7 +108,9 @@ export const projects = [
     description: "This is a Postgresql backend built using Node, Express and Knex. The endpoints for patching, deleting and editing data are secured with JSON webtokens. The data was all gathered with Nightmare by web-scraping the EPA's website.  If you really want to test the functionality of those please let me know and I can give you the keyword for access. Otherwise the docs have all the info for accessing the public endpoints. This project was built in four days and I would like to revisit to add additional states.",
     production: "https://byob-pichelle.herokuapp.com/",
     github: "https://github.com/etcetera8/CO-superfund-api",
-    image: co_api
+    image: co_api,
+    gh: true,
+    live: true
   },
   {
     id: 10,
@@ -98,7 +118,9 @@ export const projects = [
     description: "This application was my group capstone project for Turing school. We leveraged the skills we have learned over the course of Turing. The purpose of eSpeak is to provide users with a way to learn and practice their Spanish vocabulary. The front end was built in React Native, the back end was built in PostgreSQL, Node, Express, and  Knex. We used Firebase for user authentication and authorization. After creating an account and logging in, a user can go through the flash cards we have set up for them to practice their Spanish vocabulary. The user recieves points as they move throught the cards and unlock levels.",
     production: "#",
     github: "https://github.com/etcetera8/eSpeak",
-    image: espeak
+    image: espeak,
+    gh: true,
+    live: false
   },
   {
     id: 11,
@@ -106,6 +128,8 @@ export const projects = [
     description: "This is an application that takes real cycling data from a mounted computer and maps the polyline. The user is also presented a graph of power data over time. The user is able to select areas on the power graph and have the relevant areas on the map highlighted. There is also a graph display of max heart rates and best power averages for 1, 5, 10, 15, and 20 minute power averages. This app was built using React, Google Maps Api and React Charts.",
     production: "https://ride-cast.herokuapp.com/",
     github: "#",
-    image: ridecast
+    image: ridecast,
+    gh: false,
+    live: true
   },
 ]
