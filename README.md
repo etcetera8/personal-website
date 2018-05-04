@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/etcetera8/personal-website.svg?branch=master)](https://travis-ci.org/etcetera8/personal-website)
+
 # personal-website
 
 Building out my personal website while learning Vue!
