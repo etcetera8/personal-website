@@ -72,7 +72,6 @@ export default {
     justify-content: center;
     flex-basis: 100%;
     margin-top: 30px;
-    height: 500px;
     border: 1px solid #1B998B;
     cursor: pointer;
     width: 100px;
@@ -86,7 +85,6 @@ export default {
 
   .carousel-button:hover {
     border-color: #383d3b;
-    background: #FBFEF9;
     color: #383d3b;
   }
 
@@ -134,6 +132,7 @@ export default {
     overflow: hidden;
     min-height: 711px;
     max-height: 800px;
+    background: #fff;
   }
 
   .project-display {

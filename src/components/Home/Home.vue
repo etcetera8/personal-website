@@ -31,7 +31,7 @@
     display: flex;
     margin: 25px;
     border: 1px solid lightgray;
-    background: #FBFEF9;
+    background: #fff;
     height: 500px;
     letter-spacing: .1em;
   }

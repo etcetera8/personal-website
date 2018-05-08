@@ -10,7 +10,7 @@
 <style>
 
   form {
-    align-self: flex-start;
+    align-self: center;
   }
 
   .download {
@@ -18,30 +18,33 @@
     font-size: 1em;
     height: 40px;
     width: 100px;
-    color: #FBFEF9;
+    color: #1B998B;
     background: none;
-    border: 1px solid #84DCC6;
-    transition: background 0.2s, color 0.2s;
+    border: 1px solid #1B998B;
+    transition: border 0.2s, color 0.2s;
     cursor: pointer;
   }
 
   .download:hover {
-    background: #FBFEF9;
-    color: #1B998B;
+    color: #383d3b;
+    border-color: #383d3b;
   }
+
   .resume-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
     margin: 25px;
-    background: #383D3B;
+    background: #fff;
+    border: 1px solid lightgray;
   }
 
   .resume {
     width: 700px;
     height: 900px;
     background-size: contain;
+    border: 1px solid lightgray;
     background-repeat: no-repeat;
     background-image: url('../../assets/project_assets/resume.png');
   }

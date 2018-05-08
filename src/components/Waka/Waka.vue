@@ -1,8 +1,8 @@
 <template>
   <div class="waka-wrapper">
     <section class="waka-display">
-      <figure><embed src="https://wakatime.com/share/@2c90c59e-1b11-4af6-850f-8ba65cdc1447/defbbcf9-7cf7-4366-afa1-11539692078f.svg"></embed></figure>
       <figure><embed src="https://www.codewars.com/users/etcetera8/badges/large"></embed></figure>
+      <figure><embed src="https://wakatime.com/share/@etctera8/ce90fecd-0432-4554-b9d0-44393739ab9d.svg"></embed></figure>
     </section>
 
     <section class="waka-description">
@@ -43,16 +43,23 @@ export default {
 </script>
 
 <style>
+
+ .hi {
+    color: #383D3B;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 25px;
+  }
   .waka-wrapper {
     display: flex;
     border: 1px solid lightgray;
-    background-color:#FBFEF9;
+    background-color:#fff;
     margin: 25px;
     line-height: 2em;
     justify-content: space-around;
   }
 
-  .waka-display {
+  .waka-display { 
     min-width: 550px;
     width: 49%;
     min-height: 600px;
