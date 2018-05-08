@@ -17,11 +17,11 @@
 </template>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto');
 
   .header {
     display: flex;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     justify-content: space-between;
     align-content: center;
     color: #FBFEF9;
@@ -35,7 +35,9 @@
   }
 
   h1 {
-    margin: 10px 15px;
+    margin: 25px 15px;
+    margin-bottom: 35px;
+    font-size: 3.2em;
   }
 
   .subtitle {
