@@ -73,24 +73,28 @@ export default {
     flex-basis: 100%;
     margin-top: 30px;
     height: 500px;
-    border: 1px solid #84DCC6;
+    border: 1px solid #1B998B;
     cursor: pointer;
     width: 100px;
     font-size: 1em;
-    color: #FBFEF9;
+    color: #1B998B;
     padding: 15px 0;
     padding-bottom: 30px;
     background: none;
     transition: border-color .2s, color .2s, background .3s;
   }
 
+  .carousel-button:hover {
+    border-color: #383d3b;
+    background: #FBFEF9;
+    color: #383d3b;
+  }
+
   .chevron {
     height: 7%;
     width: 12%;
   }
-
-
-
+  
   .indicator {
     display: flex;
     justify-content: space-around;
@@ -100,18 +104,14 @@ export default {
   }
 
   .dot {
-    border: 7px solid rgba(255, 255, 255, .3);
+    border: 7px solid lightgray;
     border-radius: 50%;
   }
 
   .active {
-    border: 7px solid rgba(255, 255, 255, 1);
-  }
-
-  .carousel-button:hover {
-    border-color: #1B998B;
-    background: #FBFEF9;
-    color: #1B998B;
+    border: 9px solid #1B998B;
+    position: relative;
+    top: -3px;
   }
 
   .slide-leave-active,
@@ -129,7 +129,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#383D3B;
+    border: 1px solid lightgray;
     margin: 25px;
     overflow: hidden;
     min-height: 711px;
@@ -148,7 +148,7 @@ export default {
     display: flex;
     position: relative;
     flex-direction: column;
-    border: 1px solid #FBFEF9;
+    border: 1px solid lightgray;
     min-height: 520px;
     width: 50%;
     background-color:#FBFEF9;

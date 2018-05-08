@@ -25,7 +25,7 @@
     justify-content: space-between;
     align-content: center;
     color: #FBFEF9;
-    height: 120px;
+    height: 180px;
     background: linear-gradient(110deg, #383D3B, #1B998B);
   }
 
