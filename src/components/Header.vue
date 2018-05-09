@@ -1,15 +1,17 @@
 <template>
   <header class="ui huge header">
+    <resize-observer @notify="handleResize" />
+
     <div class="title-wrapper">
       <h1 id="name">Parker Lindley</h1>
       <h4 class="subtitle role">Front-End Developer</h4>
       <h5 class="subtitle contact"><a href="mailto:parker.t.lindley@gmail.com" target="_blank">parker.t.lindley@gmail.com</a></h5>
     </div>
     <nav v-show="display">
-      <router-link to="/" exact><button class="ui button about">ABOUT</button></router-link>
-      <router-link to="/projects"><button class="ui button projects">PROJECTS</button></router-link>
-      <router-link to="/waka"><button class="ui button waka">WAKA</button></router-link>
-      <router-link to="/resume"><button class="ui button resume">RESUME</button></router-link>
+      <router-link to="/" exact><button @click="toggleShow" class="ui button about">ABOUT</button></router-link>
+      <router-link to="/projects"><button @click="toggleShow" class="ui button projects">PROJECTS</button></router-link>
+      <router-link to="/waka"><button @click="toggleShow" class="ui button waka">WAKA</button></router-link>
+      <router-link to="/resume"><button @click="toggleShow" class="ui button resume">RESUME</button></router-link>
     </nav>
     <button @click="toggleShow"  class="mobile-nav">MENU</button>
 
@@ -28,7 +30,12 @@ export default {
   methods: {
     toggleShow() {
       this.display = !this.display;
-      console.log('clicked')
+    },
+
+    handleResize() {
+      if (window.innerWidth > 450) {
+        this.display = true;
+      }
     }
   }
 }
@@ -142,11 +149,19 @@ export default {
     .router-link-active button {
       border-bottom: 1px solid black;
     }
+
     .mobile-nav {
       display: block;
       margin: 5px auto;
       align-self: flex-end;
+      background: none;
+      height: 40px;
+      font-size: 1em;
+      color: #fff;
+      border: 1px solid #fff;
+      width: 100px;
     }
+
   }
 
 </style>

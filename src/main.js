@@ -7,11 +7,14 @@ import Home from './components/Home/Home.vue'
 import Projects from './components/Projects/Projects.vue'
 import Resume from './components/Resume/Resume.vue'
 import Waka from './components/Waka/Waka.vue'
+import VueResize from 'vue-resize'
+
 require('vue2-animate/dist/vue2-animate.min.css')
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
+Vue.use(VueResize)
 
 const routes = [
   { path: '/', component: Home },
