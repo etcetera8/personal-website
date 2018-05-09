@@ -29,7 +29,8 @@
 </template>
 
 <script>
-import { projects } from '../../../projects'
+import { projects } from '../../../projects';
+
 export default {
   data () {
     return {
