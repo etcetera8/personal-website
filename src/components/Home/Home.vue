@@ -32,7 +32,6 @@
     margin: 25px;
     border: 1px solid lightgray;
     background: #fff;
-    height: 500px;
     letter-spacing: .1em;
   }
 
@@ -107,6 +106,21 @@
 
   .email {
     background-image: url('../../assets/mail.png');
+  }
+
+  @media screen and (max-width: 880px){
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .image {
+      height: 400px;
+      width: 100%;
+    }
+
+    .social {
+      width: 90%;
+    }
   }
 
 </style>

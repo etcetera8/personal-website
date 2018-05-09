@@ -27,6 +27,7 @@ export default {
       display: true
     }
   },
+
   methods: {
     toggleShow() {
       this.display = !this.display;
@@ -35,6 +36,8 @@ export default {
     handleResize() {
       if (window.innerWidth > 450) {
         this.display = true;
+      } else {
+        this.display = false;
       }
     }
   }
