@@ -214,11 +214,14 @@ export default {
   @media screen and (max-width: 490px)  {
     .projects-wrapper {
       height: 780px;
+      margin: 0;
     }
 
     .project-card {
       margin: 50px 0;
       width: 95%;
+      margin-bottom: 25px;
+      height: 600px;
     }
 
     .project-details {

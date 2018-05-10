@@ -48,4 +48,24 @@
     background-repeat: no-repeat;
     background-image: url('../../assets/project_assets/resume.png');
   }
+
+  @media screen and (max-width: 800px) {
+    .resume {
+      width: 500px;
+      height: 700px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .resume {
+      width: 400px;
+      height: 550px;
+    } 
+  }
+
+  @media screen and (max-width: 460px) {
+    .resume-wrapper {
+      margin: 0;
+    }
+  }
 </style>
