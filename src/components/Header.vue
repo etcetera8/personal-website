@@ -29,7 +29,9 @@ export default {
 
   methods: {
     toggleShow() {
-      this.display = !this.display;
+      if (window.innerWidth < 450) {
+        this.display = !this.display;
+      }
     },
 
     handleResize() {
