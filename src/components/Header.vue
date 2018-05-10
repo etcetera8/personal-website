@@ -62,10 +62,6 @@ export default {
     float: left;
   }
 
-  /* .thing {
-    position: absolute;
-  } */
-
   a {
     text-decoration: none;
     color: #FBFEF9;
@@ -172,8 +168,19 @@ export default {
       color: #fff;
       border: 1px solid #fff;
       width: 100px;
-    }
-
+    } 
   }
+
+    @media screen and (max-width: 330px){ 
+
+      .header {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+    
+    }
 
 </style>
