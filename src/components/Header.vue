@@ -1,24 +1,23 @@
 <template>
-  <header class="ui huge header">
-    <resize-observer @notify="handleResize" />
+  <div>
+    <resize-observer class="thing" @notify="handleResize" />
+    <header class="header">
+      <div class="title-wrapper">
+        <h1 id="name">Parker Lindley</h1>
+        <h4 class="subtitle role">Front-End Developer</h4>
+        <h5 class="subtitle contact"><a href="mailto:parker.t.lindley@gmail.com" target="_blank">parker.t.lindley@gmail.com</a></h5>
+      </div>
+      <nav v-show="display">
+        <router-link to="/" exact><button @click="toggleShow" class="ui button about">ABOUT</button></router-link>
+        <router-link to="/projects"><button @click="toggleShow" class="ui button projects">PROJECTS</button></router-link>
+        <router-link to="/waka"><button @click="toggleShow" class="ui button waka">WAKA</button></router-link>
+        <router-link to="/resume"><button @click="toggleShow" class="ui button resume">RESUME</button></router-link>
+      </nav>
+      <button @click="toggleShow"  class="mobile-nav">MENU</button>
 
-    <div class="title-wrapper">
-      <h1 id="name">Parker Lindley</h1>
-      <h4 class="subtitle role">Front-End Developer</h4>
-      <h5 class="subtitle contact"><a href="mailto:parker.t.lindley@gmail.com" target="_blank">parker.t.lindley@gmail.com</a></h5>
-    </div>
-    <nav v-show="display">
-      <router-link to="/" exact><button @click="toggleShow" class="ui button about">ABOUT</button></router-link>
-      <router-link to="/projects"><button @click="toggleShow" class="ui button projects">PROJECTS</button></router-link>
-      <router-link to="/waka"><button @click="toggleShow" class="ui button waka">WAKA</button></router-link>
-      <router-link to="/resume"><button @click="toggleShow" class="ui button resume">RESUME</button></router-link>
-    </nav>
-    <button @click="toggleShow"  class="mobile-nav">MENU</button>
-
-   </header>
-
+    </header>
+  </div>
 </template>
-
 <script>
 
 export default {
@@ -56,6 +55,14 @@ export default {
     height: 180px;
     background: linear-gradient(110deg, #383D3B, #1B998B);
   }
+
+  .title-wrapper {
+    float: left;
+  }
+
+  /* .thing {
+    position: absolute;
+  } */
 
   a {
     text-decoration: none;
