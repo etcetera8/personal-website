@@ -10,7 +10,7 @@ import joust from './src/assets/project_assets/joust.png'
 import co_api from './src/assets/project_assets/co_api.png'
 import espeak from './src/assets/project_assets/espeak.png'
 import ridecast from './src/assets/project_assets/ridecast.png'
-
+import vueTrailFind from './src/assets/project_assets/vueTrailFind.png'
 export const projects = [
   {
     id: 0,
@@ -64,7 +64,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Trail Finder",
+    title: "Trail Find",
     description: "One of the first websites I ever created using Vanilla JS and the MTB Project API. I had just moved to Colorado and was overwhelmed with choices in trails to ride near my house. I essentially created a tool that I could filter trails down based on difficulty and distance from my current position. Its how I found my go to 'after work' ride at White Rance Park. One day I would like to revisit this project with Vue or React.",
     production: "https://etcetera8.github.io/brapBrapProject/",
     github: "https://github.com/etcetera8/brapBrapProject",
@@ -74,6 +74,16 @@ export const projects = [
   },
   {
     id: 6,
+    title: "Trail Find: Vue",
+    description: "I made this app based off of an earlier one I made before I really knew anything about web development and was just playing around with it. After seven months of Turing and many hours spent coding I decided to revisit this old project as a litmus for how far I had come and an opportunity to use asynchronus JavaScript with Vue and expand my general knowledge of Vue. I reached main functionality within two days and realizded I had come far.",
+    production: "#",
+    github: "https://github.com/etcetera8/vue-trail-finder",
+    image: vueTrailFind,
+    gh: true,
+    live: false,
+  },
+  {
+    id: 7,
     title: "Movie Tracker",
     description: "A React, Router, Redux, Node/Express, Postrgresql project. The user has the ability to either sign-up for an account or sign-in. Once signed in the app allows the user to find information on recent movie releases, ratings, and save them as favorites. The user is able to logout, and come back anytime to find their favorites still persisting.",
     production: "#",
@@ -83,7 +93,7 @@ export const projects = [
     live: false
   },
   {
-    id: 7,
+    id: 8,
     title: "Cycling Team - Static Comp",
     description: "This was a code challenge where I was given a static comp to recreate with my own theme yet maintain the structure of the comp. There were no guidelines for responsive design but it was expected to be pleasing and usable. I handled the responsiveness with flexbox and it works on all size devices. I thoroughly enjoyed working on this project and would like to one day make a 'fantasy cycling team' app using this wireframe as the design.",
     production: "https://etcetera8.github.io/pl-comp-challenge-2/",
@@ -93,7 +103,7 @@ export const projects = [
     live: true
   },
   {
-    id: 8,
+    id: 9,
     title: "Weatherly",
     description: "A React weather app utiling asynchronous JavaScript and tested with Jest and Enzyme. This was a pair project where we set out with the goal to create a weather app that stood out from what most people are familiar with. We created a very simplistic UI with loading indication for improved UX. The user is able to search cities with a prefix trie npm package that I developed. The app utilizes local storage so the user is only prompted once for their location and do not have to visit the welcome screen again.",
     production: "http://weatherly.surge.sh/",
@@ -103,7 +113,7 @@ export const projects = [
     live: true
   },
   {
-    id: 9,
+    id: 10,
     title: "Colorado Superfund API",
     description: "This is a Postgresql backend built using Node, Express and Knex. The endpoints for patching, deleting and editing data are secured with JSON webtokens. The data was all gathered with Nightmare by web-scraping the EPA's website.  If you really want to test the functionality of those please let me know and I can give you the keyword for access. Otherwise the docs have all the info for accessing the public endpoints. This project was built in four days and I would like to revisit to add additional states.",
     production: "https://byob-pichelle.herokuapp.com/",
@@ -113,7 +123,7 @@ export const projects = [
     live: true
   },
   {
-    id: 10,
+    id: 11,
     title: "eSpeak",
     description: "This application was my group capstone project for Turing school. We leveraged the skills we have learned over the course of Turing. The purpose of eSpeak is to provide users with a way to learn and practice their Spanish vocabulary. The front end was built in React Native, the back end was built in PostgreSQL, Node, Express, and  Knex. We used Firebase for user authentication and authorization. After creating an account and logging in, a user can go through the flash cards we have set up for them to practice their Spanish vocabulary. The user recieves points as they move throught the cards and unlock levels.",
     production: "#",
@@ -123,7 +133,7 @@ export const projects = [
     live: false
   },
   {
-    id: 11,
+    id: 12,
     title: "Ride Cast",
     description: "This is an application that takes real cycling data from a mounted computer and maps the polyline. The user is also presented a graph of power data over time. The user is able to select areas on the power graph and have the relevant areas on the map highlighted. There is also a graph display of max heart rates and best power averages for 1, 5, 10, 15, and 20 minute power averages. This app was built using React, Google Maps Api and React Charts.",
     production: "https://ride-cast.herokuapp.com/",
@@ -131,5 +141,5 @@ export const projects = [
     image: ridecast,
     gh: false,
     live: true
-  },
+  }, 
 ]
