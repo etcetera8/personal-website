@@ -76,11 +76,11 @@ export const projects = [
     id: 6,
     title: "Trail Find: Vue",
     description: "I made this app based off of an earlier one I made before I really knew anything about web development and was just playing around with it. After seven months of Turing and many hours spent coding I decided to revisit this old project as a litmus for how far I had come and an opportunity to use asynchronus JavaScript with Vue and expand my general knowledge of Vue. I reached main functionality within two days and realizded I had come far.",
-    production: "#",
+    production: "https://trailfind.herokuapp.com/",
     github: "https://github.com/etcetera8/vue-trail-finder",
     image: vueTrailFind,
     gh: true,
-    live: false,
+    live: true,
   },
   {
     id: 7,
