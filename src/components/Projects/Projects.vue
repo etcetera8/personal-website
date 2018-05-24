@@ -17,6 +17,7 @@
         <article  class="project-card" :key="project.id">
           <div class="project-image" v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"></div>
           <h2 class="project-details">{{project.title}}</h2>
+          <div class="tech-stack"><span class="target">Tech Stack:</span> {{project.techStack}}</div>
           <p class="project-details paragraph">{{project.description}}</p>
           <div class="btn-wrapper">
             <a :class="[project.live ? link : disabled]" :href="project.production">Live Page</a>
@@ -30,6 +31,7 @@
 
 <script>
 import { projects } from '../../../projects';
+import react from '../../assets/stackLogos/react.png'
 
 export default {
   data () {
@@ -82,6 +84,15 @@ export default {
     padding-bottom: 30px;
     background: none;
     transition: border-color .2s, color .2s, background .3s;
+  }
+
+  .tech-stack {
+    margin: 0 0 0 10px;
+    font-size: .8em;
+  }
+
+  .target {
+    font-weight: 500;
   }
 
   .carousel-button:hover {
