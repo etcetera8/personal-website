@@ -4,9 +4,9 @@
       <section class="image">
       </section>
       <section class="about">
-        <p class="hi">I am an energetic front-end developer with a passion for learning and a drive for creating beautiful, functional and accessible apps. I have developed numerous web and mobile apps and have a background in cartography and GIS.</p>
-        <p class="hi">Most of my free time is spent maintaining my stable of bikes, training for racing or working on toy projects. Personal favorite way to start a day? Kick my own ass up and down a mountain, followed by a burrito and then spending the rest of the day creating fun projects in a food coma.</p>
-        <p class="hi">Feel free to contact me about any of my work, what I'm working on right now, or even mountain biking in Colorado or North Carolina. </p>
+        <p class="text">I am an energetic front-end developer with a passion for learning and a drive for creating beautiful, functional and accessible apps. I've developed numerous web and mobile apps, have a background in cartography and GIS, and am a fan of all things cycling. My favorite part about software development is seeing how passionate individuals working <em><strong>together</strong></em> create applications that are greater than any individual. It's so cool.</p>
+        <p class="text">Most of my free time is spent maintaining my stable of bikes, training for racing or working on toy projects. Personal favorite way to start the day? Kick my own ass up and down a mountain, smashing a burrito, then spending the rest of the day squashing bugs or developing a new feature.</p>
+        <p class="text">Feel free to contact me about any of my work, what I'm working on right now, questions about code or development (Looking for a mentor??)or even mountain biking in Colorado or North Carolina.</p>
       </section>
     </div>
     <section class="social">
@@ -36,22 +36,17 @@
   }
 
   .image {
-    background-image: url('../../assets/bike.jpg');
+    background-image: url('../../assets/dio.jpg');
     background-size: cover;
     width: 450px;
     min-width: 33%;
   }
 
-  .hi {
+  .text {
     color: #383D3B;
     font-size: 1.3em;
     font-weight: 500;
     margin: 25px;
-  }
-
-  .hi::first-letter {
-    font-size: 1.1em;
-    font-weight: bold;
   }
 
   .social {

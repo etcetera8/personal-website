@@ -161,8 +161,8 @@ export default {
     flex-direction: column;
     border: 1px solid lightgray;
     min-height: 520px;
-    width: 50%;
-    background-color:#FBFEF9;
+    width: 65%;
+    background-color:rgb(248, 248, 248);
     margin: 50px;
   }
 

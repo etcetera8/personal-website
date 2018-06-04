@@ -10,7 +10,7 @@
       <nav v-show="display">
         <router-link to="/" exact><button @click="toggleShow" class="ui button about">ABOUT</button></router-link>
         <router-link to="/projects"><button @click="toggleShow" class="ui button projects">PROJECTS</button></router-link>
-        <router-link to="/waka"><button @click="toggleShow" class="ui button waka">WAKA</button></router-link>
+        <router-link to="/waka"><button @click="toggleShow" class="ui button waka">STATS</button></router-link>
         <router-link to="/resume"><button @click="toggleShow" class="ui button resume">RESUME</button></router-link>
       </nav>
       <button @click="toggleShow"  class="mobile-nav">MENU</button>
@@ -68,7 +68,7 @@ export default {
   }
 
   h1 {
-    margin: 25px 15px;
+    margin: 25px;
     margin-bottom: 35px;
     font-size: 3.2em;
   }
@@ -78,7 +78,7 @@ export default {
   }
 
   .subtitle {
-    margin: 4px 15px;
+    margin: 4px 25px;
     color: #FBFEF9;
   }
 
@@ -88,7 +88,7 @@ export default {
 
   nav {
     align-self: flex-end;
-    margin-right: 15px;
+    margin-right: 25px;
   }
 
   .button {

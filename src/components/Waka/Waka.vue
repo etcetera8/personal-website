@@ -5,9 +5,9 @@
         <figure class="floater"><embed src="https://wakatime.com/share/@etctera8/ce90fecd-0432-4554-b9d0-44393739ab9d.svg"></embed></figure>
         <figure><embed src="https://www.codewars.com/users/etcetera8/badges/small"></embed></figure>
       </div>
-      <p class="hi">This is a breakdown of the languages I'm using although I'm always more than willing to dive into some new languages or frameworks and see what I can make happen.</p>
-      <p class="hi">I thoroughly enjoy the compartmentalization and reusability that front end frameworks such that React and Vue both offer so you'll find that many of my projects utilize either one of those. I'm also a fan of challenging myself with code exercises over a cup of coffee in the morning. The badge there is my current kata level on Codewars.</p>
-      <p class="hi">I make a point of it to test every one of my applications as it makes my, and the lives of my fellow project members, much easier down the road when we go about refactoring.</p>
+      <p class="text">This is a breakdown of the languages I'm using most recently and my current level from Codewars. I'm always more than willing to dive into some new languages or frameworks and see what I can make happen. Most recently I've been really interested in trying to create complex backends and integrate them with my front end work. A personal goal of mine is to make some forward momentum learning Ruby.</p>
+      <p class="text">I thoroughly enjoy the compartmentalization and reusability that frameworks such that React and Vue both offer so you'll find that many of my projects utilize either one of those. It was the convenience and scalability that brought me into these frameworks and the community that makes me stay. I will always try and give back to people trying to learn these as I have been taught so much by those willing to give their time. \</p>
+      <p class="text">I also make a point of it to test every one of my applications as it makes my, and the lives of my fellow project members, much easier down the road when we go about refactoring. Typically I use Jest and Enzyme for React and Mocha Chai for my backend work. I have also used Jasmine but typically in Exercism and Codewar exercises.</p>
     </section>
   </div>
 </template>
@@ -43,7 +43,7 @@ export default {
 
 <style>
 
- .hi {
+ .text {
     color: #383D3B;
     font-size: 1.3em;
     font-weight: 500;

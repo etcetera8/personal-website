@@ -40,7 +40,7 @@ html, body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #FBFEF9;
+  background: rgb(255, 255, 255);
   margin-top: 0;
   padding: 0;
 }

@@ -14,14 +14,14 @@ import vueTrailFind from './src/assets/project_assets/vueTrailFind.png'
 export const projects = [
   {
     id: 0,
-    title: "Kog Locker",
-    description: "Kog Locker is a cycling-oriented social and personal motivation application. The app features \"gamification\" with hand-rolled badges indicating the cylcists progress,targeting and mapping of a user selected segment, yearly and recent statistics and lazy loading of images that the user has taken through various activities.",
-    production: "https://kog-lockr.herokuapp.com/",
-    github: "https://github.com/etcetera8/kog-locker",
-    image: koglock,
-    techStack: "React, Redux, Router, PostgreSQL, Node, Express, Knex, OAuth 2.0, Mocha, Chai, Jest, Enzyme",
+    title: "eSpeak",
+    description: "The purpose of eSpeak is to provide users with a way to learn and practice their Spanish vocabulary on the go. After creating an account, logging in and being authenticated through Firebase, a user can choose a category of flash cards to practice their spanish on. The user is rewarded with a correct answer with points and an increase in thier status bar. If a user is having trouble with a word or phrase they are able to request a hint which provides them with a phonetic spelling of the word in exchange for small amount of points.",
+    production: "#",
+    github: "https://github.com/etcetera8/eSpeak",
+    techStack: "React Native, PostgreSQL, Express, Node, Knex, Firebase",
+    image: espeak,
     gh: true,
-    live: true
+    live: false
   },
   {
     id: 1,
@@ -59,7 +59,7 @@ export const projects = [
   {
     id: 4,
     title: "Joust",
-    description: "I set out to recreate my favorite arcade game of all time. This project is pure Vanilla JS and HTML5 canvas with extensive use of OOP. All physics and collision detection were written from scratch. The game is two player so grab a friend and getter ready to Joust! The largest challenges I came across was writing the collision detection and finding and implementing half decent sprite images.",
+    description: "I set out to recreate my favorite arcade game of all time. This project is pure Vanilla JS and HTML5 canvas with extensive use of OOP. All physics and collision detection were written from scratch. The object of the game is to defeat your opponent in one on one combat while avoiding the lances of wandering enemies riding vultures. You win a 'Joust' by landing on your opponents head. And watch out for falling into lava! The game is two player so grab a friend and getter ready to Joust!",
     production: "http://joust-clone.surge.sh/",
     github: "https://github.com/etcetera8/game-time",
     techStack: "HTML5, Canvas, Mocha, Chai",
@@ -70,7 +70,7 @@ export const projects = [
   {
     id: 5,
     title: "Trail Find: Vue",
-    description: "I made this app based off of an earlier one I made before I really knew anything about web development and was just playing around with it. After seven months of Turing and many hours spent coding I decided to revisit this old project as a litmus for how far I had come and an opportunity to use asynchronus JavaScript with Vue. I reached main functionality within two days and realized I had come far.",
+    description: "I made this app based off of an app I made before I knew anything about web development and was just playing around. After seven months of Turing and many hours spent coding I decided to revisit this old project as a litmus for how far I had come and an opportunity to use asynchronus JavaScript with Vue. I reached main functionality within two days and realized I had come far. The user comes to the site, allows the browser to gain their location, select a difficulty of trail and distance from location and are presented with a variety of options for riding! Click the link for google maps directions to get to riding!",
     production: "https://trailfind.herokuapp.com/",
     github: "https://github.com/etcetera8/vue-trail-finder",
     image: vueTrailFind,
@@ -124,19 +124,19 @@ export const projects = [
   },
   {
     id: 10,
-    title: "eSpeak",
-    description: "This application was my group capstone project for Turing school. We leveraged the skills we have learned over the course of Turing. The purpose of eSpeak is to provide users with a way to learn and practice their Spanish vocabulary. We used Firebase for user authentication and authorization. After creating an account and logging in, a user can go through the flash cards we have set up for them to practice their Spanish vocabulary. The user recieves points as they move throught the cards and unlock levels.",
-    production: "#",
-    github: "https://github.com/etcetera8/eSpeak",
-    techStack: "React Native, PostgreSQL, Express, Node, Knex, Firebase ",
-    image: espeak,
+    title: "Kog Locker",
+    description: "Kog Locker is a cycling-oriented social and personal motivation application that sets goals and targets for the user to give incentive to reach and go beyond those goals. Upon logging in through Strava (And if you don't have a strava account, go get one, go ride, and then come back) the user is presented with interesting statistics of their rides, unlockable badges that show progress, and a map where the user can set a target segment to help set a personal record. I also implemented a lazy loading carousel of images from the users rides in order to look back on all the awesomeness that has taken place.",
+    production: "https://kog-lockr.herokuapp.com/",
+    github: "https://github.com/etcetera8/kog-locker",
+    image: koglock,
+    techStack: "React, Redux, Router, PostgreSQL, Node, Express, Knex, OAuth 2.0, Mocha, Chai, Jest, Enzyme",
     gh: true,
-    live: false
+    live: true
   },
   {
     id: 11,
     title: "Ride Cast",
-    description: "This is an application that takes real cycling data from a mounted computer and maps the polyline. The user is also presented a graph of power data over time. The user is able to select areas on the power graph and have the relevant areas on the map highlighted. There is also a graph display of max heart rates and best power averages for 1, 5, 10, 15, and 20 minute power averages.",
+    description: "This is an application that takes cycling data from a mounted computer  unit such as a Garmin. The application builds and presents a map to the user of their ride on a map. The user is also presented with a graph of power data over time where they can select two data points and the corresponding time and location is highlighted on the map. There is also a graph display of max heart rates and best power averages for 1, 5, 10, 15, and 20 minute power averages.",
     production: "https://ride-cast.herokuapp.com/",
     github: "#",
     image: ridecast,
