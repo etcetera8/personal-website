@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrapper">
     <div class="wrapper">
-      <section class="image">
+      <section class="image" alt="Picture of Parker">
       </section>
       <section class="about">
         <p class="text">I am an energetic front-end developer with a passion for learning and a drive for creating beautiful, functional and accessible apps. I've developed numerous web and mobile apps, have a background in cartography and GIS, and am a fan of all things cycling. My favorite part about software development is seeing how passionate individuals working <em><strong>together</strong></em> create applications that are greater than any individual. It's so cool.</p>

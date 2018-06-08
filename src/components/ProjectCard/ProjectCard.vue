@@ -1,8 +1,15 @@
 <template>
   <article  class="project-card" :key="project.id">
-    <div class="project-image" v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"></div>
+    <div 
+      class="project-image" 
+      v-bind:style="{ 'background-image': 'url(' + project.image + ')' }"
+      alt="Screenshot of project">
+    </div>
     <h2 class="project-details">{{project.title}}</h2>
-    <div class="tech-stack"><span class="target">Tech Stack:</span> {{project.techStack}}</div>
+    <div class="tech-stack">
+      <span class="target">Tech Stack:</span>
+      {{project.techStack}}
+    </div>
     <p class="project-details paragraph">{{project.description}}</p>
     <div class="btn-wrapper">
       <a :class="[project.live ? link : disabled]" :href="project.production">Live Page</a>
