@@ -28,17 +28,17 @@ export default {
   },
 
   methods: {
-    toggleShow() {
+    toggleShow () {
       if (window.innerWidth < 450) {
         this.display = !this.display;
       }
     },
 
-    handleResize() {
+    handleResize () {
       if (window.innerWidth > 450) {
-        this.display = true;
+        this.display = true
       } else {
-        this.display = false;
+        this.display = false
       }
     }
   }
@@ -133,12 +133,12 @@ export default {
     }
   }
 
-  @media screen and (max-width: 450px){ 
+  @media screen and (max-width: 450px) {
     .header {
       position: relative;
     }
-    
-    nav {      
+
+    nav {
       display: flex;
       flex-direction: column-reverse;
       position: absolute;
@@ -168,7 +168,7 @@ export default {
       color: #fff;
       border: 1px solid #fff;
       width: 100px;
-    } 
+    }
   }
 
     @media screen and (max-width: 330px){ 
@@ -180,7 +180,6 @@ export default {
       h1 {
         font-size: 2.5em;
       }
-    
     }
 
 </style>

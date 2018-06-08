@@ -55,12 +55,12 @@
       height: 700px;
     }
   }
-  
+
   @media screen and (max-width: 600px) {
     .resume {
       width: 400px;
       height: 550px;
-    } 
+    }
   }
 
   @media screen and (max-width: 460px) {

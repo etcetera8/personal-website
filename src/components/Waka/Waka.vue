@@ -59,7 +59,7 @@ export default {
     justify-content: space-around;
   }
 
-  .waka-display { 
+  .waka-display {
     min-width: 550px;
     width: 49%;
     min-height: 600px;
